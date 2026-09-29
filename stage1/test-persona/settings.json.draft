@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node C:/claude-remote/test-persona/persona-hook.mjs",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
