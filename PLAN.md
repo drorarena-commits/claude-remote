@@ -76,6 +76,15 @@ marketing של קומקס — דרך יוני, בלי כניסה נפרדת. **�
   הגנה ב-`ensureWindow` (לא להשיק מחדש כש-`runs/.lock` תפוס) — להציג לדרור לפני.
 - שלב 3: הכרום של דרור חייב לעלות לבד עם התוסף אחרי אתחול.
 
+## קבצים לטלפון (30/09)
+
+- Google Drive for desktop הותקן (01:31, חתימת Google LLC אומתה); `G:\האחסון שלי\מהסוכן\`
+  (folder id `1NeHsRAdRA0Q2C5Mwrsfnd_ABPoduIb1a`). העתקה → סנכרון ~30 שנ' → `search_files` → `viewUrl` ✅.
+- ❌ הצגה בצ'אט דרך Claude in Chrome: `file://` הופך ל-`https://file:///…`, ו-drive.google.com חסום
+  ("Navigation to this domain is not allowed"). צילום של דף אתר ב-Claude in Chrome כן מופיע בצ'אט.
+- `create_file` עם `base64Content` עובד אבל הסוכן מקליד את כל הקובץ — לא להשתמש לתמונות/אקסל.
+- נכתב ב-CLAUDE.md של קומקס. "Allow access to file URLs" בתוסף — הודלק לניסוי, לא נחוץ (המלצה: לכבות).
+
 ## ממצא: ייצוא פריטים כפול (30/09)
 
 שגרה באפליקציית הדסקטופ `comax-nightly-items-export` ("ייצוא פריטים לילי מקומקס", 03:00 + עד 8 דק')
