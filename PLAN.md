@@ -80,7 +80,7 @@ marketing של קומקס — דרך יוני, בלי כניסה נפרדת. **�
 
 - Google Drive for desktop הותקן (01:31, חתימת Google LLC אומתה); `G:\האחסון שלי\מהסוכן\`
   (folder id `1NeHsRAdRA0Q2C5Mwrsfnd_ABPoduIb1a`). העתקה → סנכרון ~30 שנ' → `search_files` → `viewUrl` ✅.
-- ❌ הצגה בצ'אט דרך Claude in Chrome: `file://` הופך ל-`https://file:///…`, ו-drive.google.com חסום
+- ✅ **תמונה = `Read` בסשן — מופיעה לדרור בצ'אט בטלפון** (דרור, 30/09). ❌ דרך Claude in Chrome: `file://` הופך ל-`https://file:///…`, ו-drive.google.com חסום
   ("Navigation to this domain is not allowed"). צילום של דף אתר ב-Claude in Chrome כן מופיע בצ'אט.
 - `create_file` עם `base64Content` עובד אבל הסוכן מקליד את כל הקובץ — לא להשתמש לתמונות/אקסל.
 - נכתב ב-CLAUDE.md של קומקס. "Allow access to file URLs" בתוסף — הודלק לניסוי, לא נחוץ (המלצה: לכבות).
