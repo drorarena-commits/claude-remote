@@ -1,0 +1,2 @@
+cd /d C:\AGENT-COMAX-CLOAD
+claude remote-control --name comax-agent --spawn=same-dir
