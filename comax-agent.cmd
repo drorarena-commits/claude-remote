@@ -2,7 +2,7 @@
 rem "יוני קומקס" - Remote Control server for C:\AGENT-COMAX-CLOAD (source: C:\claude-remote).
 rem chcp 65001 must come first: cmd reads the rest of this file in the active
 rem code page, and the Hebrew --name below is UTF-8.
-rem --capacity 3: up to 3 phone sessions at once (Dror, 14/10/2026; was 2
+rem --capacity 4: up to 4 phone sessions at once (Dror, 24/10/2026; was 3 from 14/10, 2
 rem since 30/09 - a 3rd session opened in the cloud); --permission-mode auto: Comax runs
 rem without asking (Dror, 30/09/2026). Deny rules come in stage 6.
 rem --chrome: Claude in Chrome (Dror's own Chrome) for site/PIM work; the Comax
@@ -11,4 +11,4 @@ rem --spawn=same-dir only - never worktree: runs\.lock, data\ and content\ do
 rem not exist in a worktree copy.
 chcp 65001 >nul
 cd /d C:\AGENT-COMAX-CLOAD
-claude remote-control --name "יוני קומקס" --spawn=same-dir --capacity 3 --permission-mode auto --chrome --debug-file C:\claude-remote\logs\yoni-debug.log
+claude remote-control --name "יוני קומקס" --spawn=same-dir --capacity 4 --permission-mode auto --chrome --debug-file C:\claude-remote\logs\yoni-debug.log
