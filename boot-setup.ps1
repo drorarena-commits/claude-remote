@@ -84,6 +84,15 @@ if ($Step -eq 'BitLocker') {
   if ((Get-RecoveryProtectors).Count -eq 0) {
     Add-BitLockerKeyProtector -MountPoint 'C:' -RecoveryPasswordProtector | Out-Null
   }
+  # More than one recovery password = an old one is still valid (12/11/2026: a new key was
+  # added to replace one that was exposed in a screenshot, the old one was not deleted, and
+  # this step then showed and confirmed the OLD key). Refuse; the person picks what to delete.
+  $all = Get-RecoveryProtectors
+  if ($all.Count -gt 1) {
+    Say "`nC: has $($all.Count) recovery passwords. Every one of them unlocks the disk:" Red
+    $all | ForEach-Object { Say "  $($_.KeyProtectorId)   ends with ...$(($_.RecoveryPassword -split '-')[-1])" }
+    Stop-With "delete the ones you do not keep:  manage-bde -protectors -delete C: -id {ID}  - then run -Step BitLocker again."
+  }
   $rp = (Get-RecoveryProtectors)[0]
   $key = $rp.RecoveryPassword
   $blocks = $key -split '-'
